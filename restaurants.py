@@ -33,4 +33,11 @@ new_one.number_served
 oriental_one.number_served
 
 class IceCreamStand(Restaurant):
-    def __init__(self)
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+    
+            
+temp = IceCreamStand('gelato', 'ice cream', ['vanilla', 'pistachio'])
+
+
